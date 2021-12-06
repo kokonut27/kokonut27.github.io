@@ -1,0 +1,15 @@
+.content > .contact-list > ul > li {
+  list-style-type: none;
+  margin: 0;
+}
+
+a.link {
+  /* text-indent: -15px; */
+  margin: 0 auto;
+  text-decoration: none;
+  color: #5477ab;
+}
+
+a.link:hover {
+  text-decoration: underline;
+}
