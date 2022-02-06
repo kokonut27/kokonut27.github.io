@@ -80,6 +80,10 @@ a {
   text-align: left;
 }
 
+.research {
+  text-align: left;
+}
+
 li {
   list-style-type: none;
 }
@@ -88,17 +92,29 @@ li {
   body {
     font-size: 110%;
   }
+
+  .research-yes {
+    text-indent: 20px;
+  }
 }
 
 @media screen and (max-width: 900px) {
   body {
-    font-size: 80%;
+    font-size: 90%;
+  }
+
+  .research-yes {
+    text-indent: 10px;
   }
 }
 
 @media screen and (max-width: 600px) {
   body {
-    font-size: 60%;
+    font-size: 80%;
+  }
+
+  .research-yes {
+    text-indent: 7.5px;
   }
 }
 
