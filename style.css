@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 
-body {
+html, body {
   text-align: center;
+  scroll-behavior: smooth;
   font-family: 'Noto Sans', sans-serif;
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .navbar {
+  margin: 0 auto;
   border: 1em;
   border-radius: 5px;
   padding: 5px;
@@ -14,7 +22,7 @@ body {
   background-color: #e1e3e1;
 }
 
-.navbar > a {
+.navbar a {
   opacity: 1;
   text-decoration: none;
   color: #171c18;
@@ -27,10 +35,71 @@ body {
   /* display: inline-block; */
 }
 
-.navbar > a:hover {
+.navbar a:hover {
   opacity: 1;
   color: #e1e3e1;
   background-color: #5477ab;
+  text-decoration: underline;
+}
+
+.header {
+  text-align: center;
+}
+
+.header a img {
+  vertical-align: middle;
+  width: 50;
+  height: 50;
+  /* border-radius: 50%; */
+}
+
+.header a h1 {
+  display: inline;
+}
+
+.header a {
+  text-decoration: none;
+  color: black; /* default color */
+}
+
+.header a:hover {
+  cursor: pointer;
+}
+
+.link {
+  margin: 0 auto;
+  text-decoration: none;
+  color: #5477ab;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.lab-members {
+  text-align: left;
+}
+
+li {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    font-size: 110%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 60%;
+  }
 }
 
 .content {
@@ -47,26 +116,16 @@ body {
   padding-top: 60px;
 }
 
-.header {
-  text-align: center;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-.header > a > img {
-  vertical-align: middle;
-  width: 50;
-  height: 50;
-  /* border-radius: 50%; */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  /* border-radius: 10px; */
 }
 
-.header > a > h1 {
-  display: inline;
-}
-
-.header > a {
-  text-decoration: none;
-  color: black; /* default color */
-}
-
-.header > a:hover {
-  cursor: pointer;
+::-webkit-scrollbar-thumb {
+  background: #333;
+  /* border-radius: 10px; */
 }

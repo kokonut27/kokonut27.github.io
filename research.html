@@ -6,7 +6,7 @@
     <title>Kim Laboratory - Research</title>
     <link href="/media/favicon.png" rel="icon" />
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   </head>
   <body>
     <div class="header">
@@ -20,23 +20,62 @@
 
     <div class="navbar">
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
       <a href="research.html">Research</a>
-      <a href="publication.html">Publication</a>
       <a href="lab_members.html">Lab Members</a>
       <a href="alumni.html">Alumni</a>
       <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
     </div>
 
     </br>
     </br>
 
     <div class="content">
-      <h2> Kim Laboratory - Research </h2>
-      Insert content here...
+      <h2> Research </h2>
+      At Stony Brook University, Kim laboratory studies tick-borne pathogens (<em>Rickettsia</em>, <em>Borrelia</em>, and tick-borne encephalitis virus) that brought pestilential mortality and morbidity throughout human history and continue to pose a significant threat to public health throughout the world. In particular, Kim laboratory is deeply interested in identifying microbial and host genes that are important for the pathogenic lifecycle and identifying the underlying molecular mechanisms associated with the pathogenesis, tick-borne transmission, and host immunity. For instance, we have made significant contributions to the development of novel transposon mutagenesis for <em>R. conorii</em> (causative agent of the Mediterranean spotted fever) and the generation of <em>kkaebi</em> library for the identification of rickettsial genes involved in the obligate intracellular lifecycle of <em>Rickettsia</em>. Further, we have characterized an emerging spotted fever group rickettsial agent, 
+<em>R. amblyommatis</em>, that frequently infects <em>Amblyomma americanum</em> (lone star tick), and isolated local <em>R. amblyommatis</em> strains for genotypic and phenotypic characterization.
+    <br></br>
+    Kim laboratory also participates in collaborative research activities with Dr. Carpino (Department of Microbiology and Immunology, Stony Brook University) and Dr. Missiakas (Department of Microbiology, University of Chicago) to better understand S. aureus pathogenesis and immune evasion mechanisms and to define novel vaccine antigens for recurrent infections caused by drug-resistant S. aureus. We also collaborate with Drs. Reich, Hearing, and Mackow (Department of Microbiology and Immunology, Stony Brook University) to study CoV-2 pathogenesis using preclinical animal infection models. Collectively, our laboratory aims to characterize the underlying molecular mechanisms enabling pathogenic microorganisms to cause acute and chronic diseases and study host-pathogen interactions using molecular genetic and microscopic tools, tissue culture assays, animal infection models, and clinical samples (in collaboration with the Department of Medicine, Stony Brook University).
+      <br></br>
+
+      <h2> Publications </h2>
+      <a class="link" href="https://www.ncbi.nlm.nih.gov/sites/myncbi/14sLhhIrJueAl/bibliography/43338701/public/?sort=date&direction=ascending">Expeditions and discoveries of Kim Laboratory</a>
+      <br></br>
+      <div class="latest-publications"></div>
     </div>
     
     <script src="script.js"></script>
+    <script type="module">
+const fetch = require("node-fetch");
+const cheerio = require("cheerio");
+const getRawData = (URL) => {
+   return fetch(URL)
+      .then((response) => response.text())
+      .then((data) => {
+         return data;
+      });
+};
+const URL = "https://www.ncbi.nlm.nih.gov/sites/myncbi/14sLhhIrJueAl/bibliography/43338701/public/?sort=date&direction=ascending";
+const scrapeData = async () => {
+  const rawData = await getRawData(URL);
+  const parsedData = cheerio.load(rawData);
+
+  const Data = parsedData(".citation-wrap .citation .ncbi-docsum")[0]
+    .children[1].children;
+
+  Data.forEach((publication) => {
+    if (publication.name === "span") {
+      const e = publications.children.filter((abc) => abc.name === "span");
+
+      const a = e[0];
+
+      
+      document.getElementByClass('latest-publications').innerHTML += e
+    }
+  })
+};
+
+scrapeData();
+    </script>
   </body>
 </html>
