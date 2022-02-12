@@ -88,6 +88,52 @@ li {
   list-style-type: none;
 }
 
+.go-back-up {
+  bottom: 0;
+}
+
+.go-back-up button {
+  background-color: white;
+  border: none;
+  opacity: 0.8;
+  transition: 1.25s;
+}
+
+.go-back-up button:hover {
+  cursor: pointer;
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+.description::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.description {
+  overflow: hidden;
+}
+
+.description img {
+  float: right;
+  width: 20%; 
+  height: 20%;
+}
+
+.description h3, .description p {
+  display: block;
+}
+
+.description img {
+  margin-right: 30em;
+}
+
+.description h3, 
+.description p {
+  margin-left: 30em;
+}
+
 @media screen and (max-width: 1100px) {
   body {
     font-size: 110%;
@@ -95,6 +141,19 @@ li {
 
   .research-yes {
     text-indent: 20px;
+  }
+
+  #image-3 {
+    width: 20%;
+    height: 20%;
+  }
+
+  .description img {
+    margin-right: 10em;
+  }
+
+  .description h3, .description p {
+    margin-left: 10em;
   }
 }
 
@@ -106,6 +165,11 @@ li {
   .research-yes {
     text-indent: 10px;
   }
+
+  #image-3 {
+    width: 40%;
+    height: 40%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -115,6 +179,11 @@ li {
 
   .research-yes {
     text-indent: 7.5px;
+  }
+
+  #image-3 {
+    width: 45%;
+    height: 45%;
   }
 }
 
