@@ -1,0 +1,9 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.contact .yessir {
+  margin-right: 50px;
+}
