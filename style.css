@@ -120,14 +120,29 @@ li {
   height: 20%;
 }
 
-/*.description img {
-  margin-right: 30em;
+.lefte {
+  float: left;
+  margin: 0 auto;
 }
 
-.description h3, 
-.description p {
-  margin-left: 30em;
-}*/
+.righte {
+  float: right;
+  margin: 0 auto;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.contact .yessir {
+  margin-right: 50px;
+}
+
+.contact-img {
+  transform: translate(50%, 50%);
+}
 
 @media screen and (max-width: 1100px) {
   body {
@@ -141,14 +156,6 @@ li {
   #image-3 {
     width: 20%;
     height: 20%;
-  }
-
-  .description img {
-    margin-right: 10em;
-  }
-
-  .description h3, .description p {
-    margin-left: 10em;
   }
 }
 
