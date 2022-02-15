@@ -16,7 +16,7 @@ a {
   margin: 0 auto;
   border: 1em;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   overflow: hidden;
   background-color: #e1e3e1;
 }
@@ -25,7 +25,7 @@ a {
   opacity: 1;
   text-decoration: none;
   color: #171c18;
-  float: left;
+  float: center;
   text-align: center;
   padding: 5px;
   border-radius: 5px;
@@ -142,6 +142,20 @@ li {
 
 .contact-img {
   transform: translate(50%, 50%);
+  margin-left: -9em;
+}
+
+.image-5 {
+  float: left;
+  width: 25%;
+  width: 25%;
+  padding: 30px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 1100px) {
@@ -156,6 +170,12 @@ li {
   #image-3 {
     width: 20%;
     height: 20%;
+  }
+
+  .image-5 {
+    width: 30%;
+    height: 30%;
+    padding: 30px;
   }
 }
 
@@ -172,6 +192,16 @@ li {
     width: 35%;
     height: 35%;
   }
+
+  .contact-img {
+    margin-left: -6.5em;
+  }
+
+  .image-5 {
+    width: 37%;
+    height: 37%;
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -186,6 +216,16 @@ li {
   #image-3 {
     width: 40%;
     height: 40%;
+  }
+
+  .contact-img {
+    margin-left: -5em;
+  }
+
+  .image-5 {
+    width: 50%;
+    height: 50%;
+    padding: 15px;
   }
 }
 
