@@ -104,22 +104,6 @@ li {
   transform: rotate(360deg);
 }
 
-/*.description::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.description {
-  overflow: hidden;
-}*/
-
-.description img {
-  float: right;
-  width: 20%; 
-  height: 20%;
-}
-
 .lefte {
   float: left;
   margin: 0 auto;
@@ -130,7 +114,7 @@ li {
   margin: 0 auto;
 }
 
-.contact {
+/*.contact {
   display: flex;
   justify-content: center;
   text-align: left;
@@ -138,11 +122,10 @@ li {
 
 .contact .yessir {
   margin-right: 50px;
-}
+}*/
 
 .contact-img {
-  transform: translate(50%, 50%);
-  margin-left: -9em;
+  padding-left: 7vw;
 }
 
 .image-5 {
@@ -157,6 +140,49 @@ li {
   align-items: center;
   justify-content: center;
 }
+
+.center img {
+  float: right;
+  width: 20%; 
+  height: 20%;
+}
+
+.center p, .center h3 {
+  text-align: left;
+}
+
+.opportunities {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  /* justify-content: flex-end; */
+}
+
+#image-3 {
+  width: 40%;
+  height: 40%;
+}
+
+.gallery-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*.under {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}*/
 
 @media screen and (max-width: 1100px) {
   body {
@@ -194,13 +220,17 @@ li {
   }
 
   .contact-img {
-    margin-left: -6.5em;
+    padding-left: 11vw;
   }
 
   .image-5 {
-    width: 37%;
-    height: 37%;
+    width: 39%;
+    height: 39%;
     padding: 20px;
+  }
+
+  #first h5 {
+    font-size: 52.5%;
   }
 }
 
@@ -219,13 +249,17 @@ li {
   }
 
   .contact-img {
-    margin-left: -5em;
+    padding-left: 12.5vw;
   }
 
   .image-5 {
     width: 50%;
     height: 50%;
     padding: 15px;
+  }
+
+  #first h5 {
+    font-size: 40%;
   }
 }
 
