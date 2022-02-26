@@ -150,13 +150,14 @@ li {
 }
 
 #image-2 {
-  width: 17%;
-  height: 17%;
+  width: 15%;
+  height: 15%;
+  padding-bottom: 0.5vh;
 }
 
 #image-7 {
-  width: 17%;
-  height: 17%;
+  width: 12%;
+  height: 12%;
 }
 
 .gallery-images {
@@ -191,6 +192,10 @@ li {
   height: 10%;
 }
 
+.hiyo {
+  text-indent: 8.25vw;
+}
+
 @media screen and (max-width: 1100px) {
   body {
     font-size: 110%;
@@ -204,6 +209,10 @@ li {
     width: 30%;
     height: 30%;
     padding: 30px;
+  }
+
+  .hiyo {
+    text-indent: 5.25vw;
   }
 }
 
@@ -229,6 +238,10 @@ li {
   #first h5 {
     font-size: 52.5%;
   }
+
+  .hiyo {
+    text-indent: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -252,6 +265,10 @@ li {
 
   #first h5 {
     font-size: 40%;
+  }
+
+  .hiyo {
+    text-indent: 0vw;
   }
 }
 
