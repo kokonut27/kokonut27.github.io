@@ -183,6 +183,7 @@ li {
 
 .left-top {
   float: left;
+  overflow: hidden;
 }
 
 .lab-members img {
