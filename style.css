@@ -193,8 +193,8 @@ li {
   height: 10%;
 }
 
-.hiyo {
-  text-indent: 8.25vw;
+.lab-members div {
+  padding-bottom: 4vh;
 }
 
 @media screen and (max-width: 1100px) {
