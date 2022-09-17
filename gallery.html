@@ -13,14 +13,12 @@
       <a href="https://www.stonybrook.edu/" target="_blank"><img class="left-top" width="50" height="50" src="/media/favicon.png" alt="stony brook logo" /></a>
     </div>
     
-    <!--
     <div style="color: #31708f;
     background-color: #d9edf7;
     border-color: #bce8f1;" class="alert alert-info alert-dismissible" role="alert" id="top">
       <button aria-label="Close" class="close" data-dismiss="alert" type="button"><span aria-hidden="true">×</span></button>
-      <p>We are hiring a Research Technician! Visit <a href="https://stonybrooku.taleo.net/careersection/2/jobdetail.ftl?job=2201021&tz=GMT-04%3A00&tzname=America%2FNew_York">here</a> for more details.</p>
-    </div>
-    -->
+      <p>We are hiring a Postdoctoral Associate! Visit <a href="https://stonybrooku.taleo.net/careersection/2/jobdetail.ftl?job=2203328&tz=GMT-04%3A00&tzname=America%2FNew_York">here</a> for more details.</p>
+    </div> 
     
     <div class="header">
       <a href="index.html">
@@ -50,6 +48,10 @@
           <div class="gallery-image">
             <img class="content-img gallery-image" id="gallery-image-2" src="media/image_1.jpg" alt="Department Holiday Party (2021) | From left to right: Smruti, JoAnn, Luke, Wan-Yi, Linda">
           </div>
+
+          <div class="gallery-image">
+            <img class="content-img gallery-image" id="gallery-image-3" src="media/image_17.jpg" alt="Lydia's Graduation (2022) | From lef to right: Lydia, Hwan">
+          </div>
         </div>
 
         <div id="myModal-1" class="modal">
@@ -65,12 +67,13 @@
             
           <div class="caption" id="caption-2"></div>
         </div>
-        <!--
-          <div id="third" style="background-color: white; color: white; width: ">
-            <h3>blank</h3>
-            <h5 style="background-color: white; color: white;">im blank again :D</h5>            
-          </div>
-        -->
+
+        <div id="myModal-3" class="modal">
+          <span class="close">&times;</span>
+          <img src="media/image_17.jpg" class="modal-content">
+            
+          <div class="caption" id="caption-3"></div>
+        </div>
       </div>
 
       <div class="go-back-up">
@@ -81,11 +84,14 @@
     <script>
       let modal_1 = document.getElementById("myModal-1");
       let modal_2 = document.getElementById("myModal-2");
+      let modal_3 = document.getElementById("myModal-3");
 
       let img_1 = document.getElementById("gallery-image-1");
       let img_2 = document.getElementById("gallery-image-2");
+      let img_3 = document.getElementById("gallery-image-3");
       let captionText_1 = document.getElementById("caption-1");
       let captionText_2 = document.getElementById("caption-2");
+      let captionText_3 = document.getElementById("caption-3");
       img_1.onclick = function() {
         modal_1.style.display = "block";
         captionText_1.innerHTML = this.alt;
@@ -94,9 +100,14 @@
         modal_2.style.display = "block";
         captionText_2.innerHTML = this.alt;
       }
+      img_3.onclick = function() {
+        modal_3.style.display = "block";
+        captionText_3.innerHTML = this.alt;
+      }
           
       let span_1 = document.getElementsByClassName("close")[0];
       let span_2 = document.getElementsByClassName("close")[1];
+      let span_3 = document.getElementsByClassName("close")[2];
       
           
       span_1.onclick = function() {
@@ -104,6 +115,9 @@
       }
       span_2.onclick = function() {
         modal_2.style.display = "none";
+      }
+      span_3.onclick = function() {
+        modal_3.style.display = "none";
       }
     </script>
     

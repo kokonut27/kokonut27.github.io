@@ -11,6 +11,12 @@ html, body {
   padding: 5px;
 }
 
+/*
+img {
+  border-radius: 5px;
+}
+*/
+
 a {
   text-decoration: none;
   color: black;
@@ -151,11 +157,15 @@ li {
   width: 15%;
   height: 15%;
   padding-bottom: 0.5vh;
+  max-width: 250px;
+  max-height: 250px;
 }
 
 #image-7 {
   width: 12%;
   height: 12%;
+  max-width: 250px;
+  max-height: 250px;
 }
 
 /*
@@ -205,12 +215,10 @@ li {
 .lab-members img {
   float: left;
   padding-right: 1vw;
-  width: 10%;
-  height: 10%;
 }
 
 .lab-members div {
-  padding-bottom: 4vh;
+  padding-bottom: 7vh;
 }
 
 @media screen and (max-width: 1100px) {
