@@ -1,1 +1,0 @@
-- [x] Add an alert bar ([here](https://www.solodev.com/blog/web-design/adding-an-alert-bar-to-your-website.stml))
