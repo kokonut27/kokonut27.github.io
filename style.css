@@ -27,7 +27,7 @@ a {
 .navbar {
   margin: 0 auto;
   /* border: 1em; */
-  padding: 10px;
+  /* padding: 10px; */
   overflow: hidden;
   background-color: #911818;
 }
@@ -38,10 +38,10 @@ a {
   color: #FFF;
   float: center;
   text-align: center;
-  padding: 5px;
+  padding: 10px;
   transition: 0.5s;
-  margin-right: 2%;
-  /* display: inline-block; */
+  margin: 0 auto;
+  display: inline-block; 
 }
 
 .navbar a:hover {
