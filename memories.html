@@ -41,6 +41,10 @@
       <div class="gallery-images">
         <div class="gallery-inside">
           <div class="gallery-image">
+            <img class="content-img gallery-image" id="gallery-image-15" src="media/image_27.jpeg" alt="Lab Photo 2024">
+          </div>
+          
+          <div class="gallery-image">
             <img class="content-img gallery-image" id="gallery-image-14" src="media/image_26.jpeg" alt="ASR2024 Colonial Williamsburg, VA | Luke">
           </div>
           
@@ -172,6 +176,13 @@
 
           <div class="caption" id="caption-14"></div>
         </div>
+
+        <div id="myModal-15" class="modal">
+          <span class="close">&times;</span>
+          <img src="media/image_27.jpeg" class="modal-content">
+
+          <div class="caption" id="caption-15"></div>
+        </div>
       </div>
 
       <div class="go-back-up">
@@ -192,6 +203,7 @@
       let modal_12 = document.getElementById("myModal-12");
       let modal_13 = document.getElementById("myModal-13");
       let modal_14 = document.getElementById("myModal-14");
+      let modal_15 = document.getElementById("myModal-15");
 
       let img_1 = document.getElementById("gallery-image-1");
       let img_3 = document.getElementById("gallery-image-3");
@@ -205,6 +217,7 @@
       let img_12 = document.getElementById("gallery-image-12");
       let img_13 = document.getElementById("gallery-image-13");
       let img_14 = document.getElementById("gallery-image-14");
+      let img_15 = document.getElementById("gallery-image-15");
       let captionText_1 = document.getElementById("caption-1");
       let captionText_3 = document.getElementById("caption-3");
       let captionText_5 = document.getElementById("caption-5");
@@ -217,6 +230,7 @@
       let captionText_12 = document.getElementById("caption-12");
       let captionText_13 = document.getElementById("caption-13");
       let captionText_14 = document.getElementById("caption-14");
+      let captionText_15 = document.getElementById("caption-15");
       img_1.onclick = function() {
         modal_1.style.display = "block";
         captionText_1.innerHTML = this.alt;
@@ -265,6 +279,10 @@
         modal_14.style.display = "block";
         captionText_14.innerHTML = this.alt;
       }
+      img_15.onclick = function() {
+        modal_15.style.display = "block";
+        captionText_15.innerHTML = this.alt;
+      }
           
       let span_1 = document.getElementsByClassName("close")[0];
       let span_3 = document.getElementsByClassName("close")[1];
@@ -278,6 +296,7 @@
       let span_12 = document.getElementsByClassName("close")[9];
       let span_13 = document.getElementsByClassName("close")[10];
       let span_14 = document.getElementsByClassName("close")[11];
+      let span_15 = document.getElementsByClassName("close")[12];
       
           
       span_1.onclick = function() {
@@ -315,6 +334,9 @@
       }
       span_14.onclick = function() {
         modal_14.style.display = "none";
+      }
+      span_15.onclick = function() {
+        modal_15.style.display = "none";
       }
     </script>
     
