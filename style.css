@@ -73,10 +73,7 @@ a {
 }
 
 .navbar nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: inline-block;
 }
 
 @media (max-width: 1000px) {
