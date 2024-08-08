@@ -12,7 +12,7 @@ html, body {
   font-size: 120%;
   margin: 0;
 }
-
+i
 .content {
   margin: 0;
   display: flex;
@@ -44,6 +44,7 @@ a {
   margin: 0;
   overflow: hidden;
   background-color: #911818;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 .navbar h2 {
@@ -156,6 +157,13 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-img {
+    padding-left: 0;
+  }
 }
 
 .center img {
