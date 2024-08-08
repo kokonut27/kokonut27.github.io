@@ -13,6 +13,18 @@ html, body {
   margin: 0;
 }
 
+.content {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contente {
+  margin: 0;
+}
+
 /*
 img {
   border-radius: 5px;
@@ -25,38 +37,51 @@ a {
 }
 
 .navbar {
-  margin: 0 auto;
-  /* border: 1em; */
-  /* padding: 10px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0;
   overflow: hidden;
   background-color: #911818;
 }
 
+.navbar h2 {
+  color: #FFF;
+  vertical-align: middle;
+}
+
 .navbar a {
-  opacity: 1;
   text-decoration: none;
   color: #FFF;
-  float: center;
-  text-align: center;
-  padding: 10px;
+  padding: 5px;
   transition: 0.5s;
-  margin: 0 auto;
   display: inline-block; 
 }
 
-.navbar a:hover {
-  opacity: 1;
+.navbar nav a {
+  padding-top: 6%;
+  padding-bottom: 6%;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+
+.navbar nav a:hover {
   color: #000;
   background-color: #e1e3e1;
 }
 
-.header a {
-  text-decoration: none;
-  color: black; /* default color */
+.navbar nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.header a:hover {
-  cursor: pointer;
+@media (max-width: 1000px) {
+  .navbar h2 {
+    padding-bottom: 0;
+  }
 }
 
 .link {
@@ -67,10 +92,6 @@ a {
 
 .link:hover {
   text-decoration: underline;
-}
-
-.header-img {
-  position: absolute;
 }
 
 .lab-members {
@@ -370,18 +391,11 @@ li {
   }
 }
 
-.content {
-  margin: 0;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
+.alumni {
+  font-size: 90%;
 }
 
-.contente {
-  margin: 0;
-}
-
+/*
 .alert {
     margin-bottom: 0;
     text-align: center;
@@ -448,6 +462,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
+*/
 
 .gallery-image {
   border-radius: 5px;
@@ -502,7 +517,6 @@ a {
   to {transform:scale(1)}
 }
 
-/* The Close Button */
 .close {
   position: absolute;
   top: 15px;
