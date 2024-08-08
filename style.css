@@ -144,6 +144,10 @@ li {
 
 .contact-img {
   padding-left: 7vw;
+  max-height: 270px; 
+  max-width: 400px; 
+  min-height: 260px; 
+  min-width: 395px;
 }
 
 .image-5 {
@@ -163,6 +167,10 @@ li {
 @media screen and (max-width: 800px) {
   .contact-img {
     padding-left: 0;
+    max-height: 250px;
+    max-width: 370px;
+    min-height: 200px;
+    min-width: 350px;
   }
 }
 
@@ -350,10 +358,6 @@ li {
     text-indent: 10px;
   }
 
-  .contact-img {
-    padding-left: 11vw;
-  }
-
   .image-5 {
     width: 39%;
     height: 39%;
@@ -377,10 +381,6 @@ li {
 
   .research-yes {
     text-indent: 7.5px;
-  }
-
-  .contact-img {
-    padding-left: 12.5vw;
   }
 
   .image-5 {
