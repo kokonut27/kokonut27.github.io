@@ -232,29 +232,6 @@ a {
   flex-direction: row-reverse;
 }
 
-.research {
-  text-align: left;
-  padding-left: 8em;
-  padding-right: 8em;
-}
-
-.research-yes img {
-  float: right;
-  padding-left: 16px;
-  width: 20%;
-  height: 20%;
-}
-
-@media (max-width: 700px) {
-  .research-yes img {
-    padding-left: 0;
-    position: relative;
-    float: none;
-    width: 90%;
-    height: 90%;
-  }
-}
-
 li {
   list-style-type: none;
 }
@@ -437,10 +414,6 @@ li {
     font-size: 110%;
   }
 
-  .research-yes {
-    text-indent: 20px;
-  }
-
   .image-5 {
     width: 30%;
     height: 30%;
@@ -456,10 +429,6 @@ li {
 @media screen and (max-width: 900px) {
   body {
     font-size: 90%;
-  }
-
-  .research-yes {
-    text-indent: 10px;
   }
 
   .image-5 {
@@ -481,10 +450,6 @@ li {
 @media screen and (max-width: 600px) {
   body {
     font-size: 80%;
-  }
-
-  .research-yes {
-    text-indent: 7.5px;
   }
 
   .image-5 {
