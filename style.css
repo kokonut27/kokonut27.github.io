@@ -181,6 +181,57 @@ a {
   }
 }
 
+/* 
+*
+* rework CSS of research webpage
+*
+*/
+
+.research-rework {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.research-outer-section-rework {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 2em;
+}
+
+.research-inner-section-rework {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  width: 80%;
+}
+
+.research-inner-section-rework div {
+  padding: 1.5em;
+}
+
+.research-text-rework {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  width: 70%;
+}
+
+.research-image-rework {
+  background: linear-gradient(to bottom left, #ffffff 0%, #e1e3e1 100%);
+  box-shadow: 10px -10px #900603;
+  width: 30%;
+}
+
+.research-image-rework img {
+  width: 75%;
+}
+
+.reverse-research-image {
+  flex-direction: row-reverse;
+}
+
 .research {
   text-align: left;
   padding-left: 8em;
@@ -375,16 +426,6 @@ li {
   font-size: 75%;
 }
 */
-
-.images-research #image-2 {
-  float: right;
-  padding-right: 1vw;
-}
-
-.images-research #image-7 {
-  float: right;
-  padding-left: 0.5vw;
-}
 
 .left-top {
   float: left;
