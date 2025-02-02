@@ -30,9 +30,25 @@ hr {
 }
 
 /*
-img {
-  border-radius: 5px;
+*
+* links CSS
+*
+*/
+
+.link {
+  margin: 0 auto;
+  text-decoration: none;
+  color: #5477ab;
 }
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/*
+*
+* navbar CSS
+*
 */
 
 a {
@@ -86,15 +102,87 @@ a {
   }
 }
 
-.link {
-  margin: 0 auto;
-  text-decoration: none;
-  color: #5477ab;
+/*
+*
+* rework CSS of homepage
+*
+*/
+
+.homepage-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.link:hover {
-  text-decoration: underline;
+.homepage-images img {
+  width: 50%;
 }
+
+.homepage-gallery {
+  width: 50%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.homepage-slides {
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow: hidden;
+}
+
+.outer-homepage-slide {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transform-origin: center center;
+  scroll-snap-align: center;
+}
+
+.homepage-slide {
+  display: flex;
+  justify-content: center;
+}
+
+#slide1, #slide2, #slide3, #slide4 {
+  scroll-margin-top: 1000em;
+}
+
+.homepage-prev, .homepage-next {
+  display: flex;
+  align-items: center;
+}
+
+.homepage-next a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  transition: 0.5s;
+  height: 30%;
+  min-height: 100px;
+  border-radius: 0 5px 5px 0;
+}
+
+.homepage-prev a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  transition: 0.5s;
+  height: 30%;
+  min-height: 100px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.homepage-prev a:hover, .homepage-next a:hover {
+  background: rgb(0, 0, 0, 0.1);
+}
+
 
 /* 
 *
@@ -232,6 +320,12 @@ a {
   flex-direction: row-reverse;
 }
 
+/*
+*
+* contact and opportunities webpage CSS
+*
+*/
+
 li {
   list-style-type: none;
 }
@@ -298,26 +392,6 @@ li {
   justify-content: center;
   align-items: center;
   /* justify-content: flex-end; */
-}
-
-#image-3 {
-  width: 45%;
-  height: 45%;
-}
-
-#image-2 {
-  width: 15%;
-  height: 15%;
-  padding-bottom: 0.5vh;
-  max-width: 250px;
-  max-height: 250px;
-}
-
-#image-7 {
-  width: 12%;
-  height: 12%;
-  max-width: 250px;
-  max-height: 250px;
 }
 
 /*
@@ -466,12 +540,6 @@ li {
     width: 43%;
     height: 43%;
   }
-}
-
-.alumni {
-  font-size: 90%;
-  text-align: left;
-  padding-left: 5em;
 }
 
 /*
