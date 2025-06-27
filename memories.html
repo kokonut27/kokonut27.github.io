@@ -35,6 +35,14 @@
 
     <div class="content">
       <div class="gallery-images">
+        <h2>2025</h2>
+
+        <div class="gallery-inside">
+          <div class="gallery-image">
+            <img class="content-img gallery-image" id="gallery-image-18" src="media/SL_graduation.jpeg" alt="Graduation, Smruti and Luke"/>
+          </div>
+        </div>
+
         <h2>2024</h2>
         
         <div class="gallery-inside">
@@ -110,6 +118,8 @@
             <img class="content-img gallery-image" id="gallery-image-1" src="media/image_1.jpg" alt="Department Holiday Party (2021) | From left to right: Smruti, JoAnn, Luke, Wan-Yi, Linda">
           </div>
         </div>
+
+
           
         <div id="myModal-1" class="modal">
           <span class="close">&times;</span>
@@ -215,6 +225,13 @@
 
           <div class="caption" id="caption-17"></div>
         </div>
+
+        <div id="myModal-18" class="modal">
+          <span class="close">&times;</span>
+          <img src="media/SL_graduation.jpeg" class="modal-content">
+
+          <div class="caption" id="caption-18"></div>
+        </div>
       </div>
     </div>
 
@@ -237,6 +254,7 @@
       let modal_15 = document.getElementById("myModal-15");
       let modal_16 = document.getElementById("myModal-16");
       let modal_17 = document.getElementById("myModal-17");
+      let modal_18 = document.getElementById("myModal-18");
 
       let img_1 = document.getElementById("gallery-image-1");
       let img_3 = document.getElementById("gallery-image-3");
@@ -253,6 +271,7 @@
       let img_15 = document.getElementById("gallery-image-15");
       let img_16 = document.getElementById("gallery-image-16");
       let img_17 = document.getElementById("gallery-image-17");
+      let img_18 = document.getElementById("gallery-image-18");
 
       let captionText_1 = document.getElementById("caption-1");
       let captionText_3 = document.getElementById("caption-3");
@@ -269,6 +288,7 @@
       let captionText_15 = document.getElementById("caption-15");
       let captionText_16 = document.getElementById("caption-16");
       let captionText_17 = document.getElementById("caption-17");
+      let captionText_18 = document.getElementById("caption-18");
 
       img_1.onclick = function() {
         modal_1.style.display = "block";
@@ -330,6 +350,10 @@
         modal_17.style.display = "block";
         captionText_17.innerHTML = this.alt;
       }
+      img_18.onclick = function() {
+        modal_18.style.display = "block";
+        captionText_18.innerHTML = this.alt;
+      }
           
       let span_1 = document.getElementsByClassName("close")[0];
       let span_3 = document.getElementsByClassName("close")[1];
@@ -346,6 +370,7 @@
       let span_15 = document.getElementsByClassName("close")[12];
       let span_16 = document.getElementsByClassName("close")[13];
       let span_17 = document.getElementsByClassName("close")[14];
+      let span_18 = document.getElementsByClassName("close")[15];
       
           
       span_1.onclick = function() {
@@ -392,6 +417,9 @@
       }
       span_17.onclick = function() {
         modal_17.style.display = "none";
+      }
+      span_18.onclick = function() {
+        modal_18.style.display = "none";
       }
     </script>
     
