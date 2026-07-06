@@ -17,91 +17,27 @@
     </div> 
     -->
 
-    <div class="navbar">
-      <a href="/"><h2>Kim Laboratory</h2></a>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="lab_members.html">Lab members</a>
-        <a href="memories.html">Memories</a>
-        <a href="opportunities.html">Opportunities</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+    <div class="navbar home-navbar">
+      <div class="navbar-blur">
+        <div class="navbar-container">
+          <h2><a href="/">Kim Laboratory</a></h2>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="lab_members.html">Lab members</a>
+            <a href="memories.html">Memories</a>
+            <a href="opportunities.html">Opportunities</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </div>
     </div>
 
+    </br>
     </br>
 
     <div class="content">
       <h2>Welcome to Kim Laboratory!</h2>
-      <div>
-        <div class="homepage-images">
-          <div class="homepage-gallery">
-            <div class="homepage-slides">
-              <div class="outer-homepage-slide">
-                <div id="slide1" class="homepage-slide">
-                  <div class="homepage-prev">
-                    <a href="#slide4">&#10094;</a>
-                  </div>
-                  <img src="media/homepage.jpg">
-                  <div class="homepage-next">
-                    <a href="#slide2">&#10095;</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="outer-homepage-slide">
-                <div id="slide2" class="homepage-slide">
-                  <div class="homepage-prev">
-                    <a href="#slide1">&#10094;</a>
-                  </div>
-                  <img src="media/homepage_2.jpeg">
-                  <div class="homepage-next">
-                    <a href="#slide3">&#10095;</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="outer-homepage-slide">
-                <div id="slide3" class="homepage-slide">
-                  <div class="homepage-prev">
-                    <a href="#slide2">&#10094;</a>
-                  </div>
-                  <img src="media/homepage_3.jpeg">
-                  <div class="homepage-next">
-                    <a href="#slide4">&#10095;</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="outer-homepage-slide"> <!-- if i wanna do the last slide like i wanted to before, to get rid of the whitespace, put the arrows inside of the div class -->
-                <div id="slide4" class="homepage-slide">
-                  <div class="homepage-prev">
-                    <a href="#slide3">&#10094;</a>
-                  </div>
-                  <img src="media/homepage_4.jpeg">
-                  <div class="homepage-next">
-                    <a href="#slide1">&#10095;</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <script>
-          document.querySelector('.homepage-slides').addEventListener('click', function(event) {
-            if (event.target.tagName === 'A') {
-              event.preventDefault();
-              const targetId = event.target.getAttribute('href').substring(1);
-              const targetSlide = document.getElementById(targetId);
-              if (targetSlide) {
-                targetSlide.scrollIntoView({ behavior: 'smooth', block: 'center' });
-              }
-            }
-          });
-        </script>
-      </div>
-      
       <div class="homepage-text-container">
         <div class="homepage-text">
           <p>
