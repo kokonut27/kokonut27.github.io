@@ -34,7 +34,6 @@
     <div class="content">
       <h2>Welcome to Kim Laboratory!</h2>
       <div>
-        <p style="padding-left: 25%; padding-right: 25%;">We study how pathogens adapt to different environments, cause acute and chronic diseases, and evade host immunity and antimicrobial agents through genetic, biochemical, and molecular analyses with <em>in vitro</em> and <em>in vivo</em> infection models. We study two bacterial models, <em>Rickettsia</em> species and <em>Staphylococcus aureus</em>, that exhibit markedly different genetic evolution and host adaptation traits.</p>
         <div class="homepage-images">
           <div class="homepage-gallery">
             <div class="homepage-slides">
@@ -88,12 +87,46 @@
             </div>
           </div>
         </div>
+
+        <script>
+          document.querySelector('.homepage-slides').addEventListener('click', function(event) {
+            if (event.target.tagName === 'A') {
+              event.preventDefault();
+              const targetId = event.target.getAttribute('href').substring(1);
+              const targetSlide = document.getElementById(targetId);
+              if (targetSlide) {
+                targetSlide.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              }
+            }
+          });
+        </script>
+      </div>
+      
+      <div class="homepage-text-container">
+        <div class="homepage-text">
+          <p>
+            We study
+            <br/>
+            <ul>
+              <li>Pathogen adaptation to different environments</li>
+              <li>Mechanisms enabling acute and chronic diseases</li>
+              <li>Antibiotic resistance and immune evasive mechanisms</li>
+            </ul>
+            We use genetic, biochemical, and molecular analyses with <em>in vitro</em> and <em>in vivo</em> infection models.
+            <br/><br/>
+            We study
+            <br/>
+            <ul>
+              <li>Two bacterial models: <em>Rickettsia</em> species and <em>Staphylococcus aureus</em></li>
+              <li>Three tick species: <em>Ixodes scapularis</em>, <em>Amblyomma americanum</em>, and <em>Haemaphysalis longicornis</em></li>
+            </ul>
+          </p>
+        </div>
       </div>
 
       <!-- for research, put learn more button and redirect to research -->
       <!-- for regular image, put contact us and redirect to contact page -->
       
-      <br></br>
       <br></br>
 
       <div>
