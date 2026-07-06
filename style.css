@@ -104,20 +104,9 @@ hr {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: url("media/SL_graduation.jpeg");
+  background: url("media/image_23.jpg");
   background-size: cover;
-  background-position: center;
-  opacity: 0.75;
-}
-
-.opportunities-navbar::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: url("media/opportunitiesImg.jpg");
-  background-size: cover;
-  background-position: center;
+  background-position: 0% 60%;
   opacity: 0.75;
 }
 
@@ -340,6 +329,7 @@ hr {
 .past-members-rework {
   text-align: left;
   width: 80%;
+  font-size: 70%;
 }
 
 .past-members-rework p {
@@ -449,7 +439,7 @@ hr {
 
 /*
 *
-* contact and opportunities webpage CSS
+* contact webpage CSS
 *
 */
 
@@ -462,19 +452,11 @@ li {
   justify-content: center;
   align-items: center;
   text-align: left;
-}
-
-.opportunities {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 10%;
 }
 
 @media (max-width: 800px) {
-  .opportunities div {
-    width: 80%;
-  }
-
   .contact div {
     width: 80%;
   }
