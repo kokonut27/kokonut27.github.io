@@ -595,13 +595,13 @@ li {
 
 @media (max-width: 1440px) {
   .memories-item .caption {
-    font-size: 200%;
+    font-size: 150%;
   }
 }
 
 @media (max-width: 1080px) {
   .memories-item .caption {
-    font-size: 150%;
+    font-size: 125%;
   }
 }
 
@@ -632,6 +632,7 @@ li {
     transform: translate(-50%, -50%);
     left: 50%;
     top: calc(100% + 2em);
+    text-align: center;
   }
 }
 
