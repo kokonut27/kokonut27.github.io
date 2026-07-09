@@ -29,10 +29,6 @@ hr {
   text-decoration: underline;
 }
 
-.contente {
-  margin: 0;
-}
-
 /*
 *
 * links CSS
@@ -93,7 +89,7 @@ hr {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: url("media/image_27.jpeg");
+  background: url("media/labPhoto24.jpeg");
   background-size: cover;
   background-position: center;
   opacity: 0.75;
@@ -104,7 +100,7 @@ hr {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: url("media/image_23.jpg");
+  background: url("media/departmentRetreat2.jpg");
   background-size: cover;
   background-position: 0% 60%;
   opacity: 0.75;
@@ -464,155 +460,178 @@ li {
 
 /*
 *
-* Gallery webpage CSS
+* Memories webpage CSS
 *
 */
 
-/*
-.gallery-images {
-  display: flex;
-  text-align: left;
-  flex-direction: flex-start;
-  align-items: center;
-}
-*/
-
-
-.gallery-inside {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.gallery-images .content-img {
-  width: 25vw;
-  height: 40vh;
-  padding: 10px;
-}
-
-@media (max-width: 1080px) {
-  .gallery-inside {
-    flex-direction: column;
-  }
-
-  .gallery-images .content-img {
-    width: 60vw;
-    height: 40vh;
-  }
-}
-
-.gallery-images .content-img:hover {
-  cursor: pointer;
-}
-
-
-/*
 .memories {
-  padding-left: 5%;
-  padding-right: 5%;
-  margin: 0;
-  box-sizing: border-box;
+  position: relative;
 }
 
-.memories-items {
+.memories-header {
+  color: #900603;
+  font-size: 200%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.outer-memories-item {
+  position: relative;
+}
+
+.memories::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #900603;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+}
+
+.memories .left-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #900603;
+  right: -15px;
+}
+
+.memories .right-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #900603;
+  left: -15px;
+}
+
+.memories .indicator {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.memories .indicator::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #900603;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.outer-memories-item {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-@media (max-width: 800px) {
-  .memories-items {
-    flex-direction: column;
-  }
+  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .memories-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 80%;
+  gap: 0.5em;
+}
+
+.reverse-memories-item {
+  justify-content: right;
+}
+
+.memories-item .image {
+  width: 45%;
   position: relative;
   display: inline-block;
-  padding-bottom: 5%;
 }
 
-.memories img {
-  width: 90%;
-  max-width: 400px;
-  float: left;
-  position: relative;
-  padding-bottom: 1vh;
+.memories-item .image img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.memories .caption {
-  background-color: #666;
-  color: #ccc;
-  width: 90%;
-  max-width: 400px;
-  padding-bottom: 1vh;
-  bottom: 0;
-  font-size: 75%;
+.memories-item .caption {
+  display: block;
+  position: absolute;
+  margin: auto;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 225%;
+  width: 80%;
+  max-width: 700px;
+  text-align: left;
+  color: #900603;
+  padding: 10px 0;
+  top: 20%;
+  left: 175%;
+  transform: translate(-50%, -50%);
 }
-*/
 
-.left-top {
-  float: left;
-  overflow: hidden;
+.reverse-memories-item .caption {
+  left: -75%;
+  transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 1100px) {
-  body {
-    font-size: 110%;
-  }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
-  .image-5 {
-    width: 30%;
-    height: 30%;
-    padding: 30px;
-  }
-
-  .gallery-images img {
-    width: 35%;
-    height: 35%;
+@media (max-width: 1440px) {
+  .memories-item .caption {
+    font-size: 200%;
   }
 }
 
-@media screen and (max-width: 900px) {
-  body {
-    font-size: 90%;
-  }
-
-  .image-5 {
-    width: 39%;
-    height: 39%;
-    padding: 20px;
-  }
-
-  #first h5 {
-    font-size: 52.5%;
-  }
-
-  .gallery-images img {
-    width: 37%;
-    height: 37%;
+@media (max-width: 1080px) {
+  .memories-item .caption {
+    font-size: 150%;
   }
 }
 
-@media screen and (max-width: 600px) {
-  body {
-    font-size: 80%;
+@media (max-width: 800px) {
+  .memories-header {
+    font-size: 150%;
   }
 
-  .image-5 {
-    width: 50%;
-    height: 50%;
-    padding: 15px;
+  .outer-memories-item {
+    margin-bottom: 3em;
   }
 
-  #first h5 {
-    font-size: 40%;
+  .memories-item {
+    justify-content: right;
   }
 
-  .gallery-images img {
-    width: 43%;
-    height: 43%;
+  .left-arrow {
+    border-left: none !important;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #900603;
+    right: 0;
+    left: -15px;
+  }
+
+  .memories-item .caption {
+    font-size: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: calc(100% + 2em);
   }
 }
 
@@ -684,80 +703,3 @@ a {
     color: inherit;
 }
 */
-
-.gallery-image {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.gallery-image:hover {opacity: 0.7;}
-
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-.caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation - Zoom in the Modal */
-.modal-content, .caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-}
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
