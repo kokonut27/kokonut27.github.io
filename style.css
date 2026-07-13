@@ -8,7 +8,6 @@ html, body {
   text-align: center;
   scroll-behavior: smooth;
   font-family: 'Noto Sans', sans-serif;
-  /* padding: 5px; */
   font-size: 120%;
   margin: 0;
 }
@@ -468,11 +467,49 @@ li {
   position: relative;
 }
 
+.outside-memories-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.memories-nav {
+  display: flex;
+  width: 75%;
+}
+
+.memories-nav a {
+  text-decoration: none;
+  color: #900603;
+}
+
+.memories-nav h3 {
+  transition: 0.2s ease;
+}
+
+.memories-nav h3:hover {
+  transform: translateY(-5px);
+}
+
+.outside-divider {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.line-divider {
+  height: 50%;
+  border-bottom: 1px solid #bbb;
+}
+
 .memories-header {
   color: #900603;
   font-size: 200%;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+.memories-header a {
+  color: #900603;
+  text-decoration: none;
 }
 
 .outer-memories-item {
